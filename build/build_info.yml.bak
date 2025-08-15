@@ -1,0 +1,4 @@
+west:
+  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b esp_wrover_kit/esp32/procpu
+  topdir: C:\Users\admin\zephyrproject
+  version: 1.4.0

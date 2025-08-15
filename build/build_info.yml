@@ -1,0 +1,53 @@
+cmake:
+  application:
+    configuration-dir: C:/Users/admin/zephyrproject/apps/test_model
+    source-dir: C:/Users/admin/zephyrproject/apps/test_model
+  board:
+    name: esp_wrover_kit
+    path:
+     - C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit
+    qualifiers: esp32/procpu
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/bindings
+    files:
+     - C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit/esp_wrover_kit_procpu.dts
+    include-dirs:
+     - C:/Users/admin/zephyrproject/external/modules/hal/atmel/include
+     - C:/Users/admin/zephyrproject/external/modules/hal/gigadevice/include
+     - C:/Users/admin/zephyrproject/external/modules/hal/microchip/include
+     - C:/Users/admin/zephyrproject/external/modules/hal/microchip/dts
+     - C:/Users/admin/zephyrproject/external/modules/hal/nuvoton/dts
+     - C:/Users/admin/zephyrproject/external/modules/hal/nxp/dts
+     - C:/Users/admin/zephyrproject/external/modules/hal/stm32/dts
+     - C:/Users/admin/zephyrproject/external/zephyr/include
+     - C:/Users/admin/zephyrproject/external/zephyr/include/zephyr
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/common
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/x86
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/xtensa
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/sparc
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/riscv
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/posix
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/nios2
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/arm64
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/arm
+     - C:/Users/admin/zephyrproject/external/zephyr/dts/arc
+     - C:/Users/admin/zephyrproject/external/zephyr/dts
+  kconfig:
+    files:
+     - C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit/esp_wrover_kit_procpu_defconfig
+     - C:/Users/admin/zephyrproject/apps/test_model/prj.conf
+    user-files:
+     - C:/Users/admin/zephyrproject/apps/test_model/prj.conf
+  toolchain:
+    name: zephyr
+    path: C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.1.0
+    zephyr-base: C:/Users/admin/zephyrproject/external/zephyr
+version: 0.1.0
+west:
+  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b esp_wrover_kit/esp32/procpu
+  topdir: C:\Users\admin\zephyrproject
+  version: 1.4.0
