@@ -4,7 +4,7 @@ C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\Kconfig.modules
 C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\arch\Kconfig
 C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\boards\Kconfig
 C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\boards\Kconfig.defconfig
-C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\boards\Kconfig.esp_wrover_kit
+C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\boards\Kconfig.qemu_x86
 C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\soc\Kconfig
 C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\soc\Kconfig.defconfig
 C:\Users\admin\zephyrproject\apps\test_model\build\Kconfig\soc\Kconfig.soc
@@ -60,9 +60,9 @@ C:\Users\admin\zephyrproject\external\zephyr\arch\x86\core\Kconfig.intel64
 C:\Users\admin\zephyrproject\external\zephyr\arch\xtensa\Kconfig
 C:\Users\admin\zephyrproject\external\zephyr\boards\Kconfig
 C:\Users\admin\zephyrproject\external\zephyr\boards\Kconfig.v2
-C:\Users\admin\zephyrproject\external\zephyr\boards\espressif\esp_wrover_kit\Kconfig
-C:\Users\admin\zephyrproject\external\zephyr\boards\espressif\esp_wrover_kit\Kconfig.defconfig
-C:\Users\admin\zephyrproject\external\zephyr\boards\espressif\esp_wrover_kit\Kconfig.esp_wrover_kit
+C:\Users\admin\zephyrproject\external\zephyr\boards\qemu\x86\Kconfig
+C:\Users\admin\zephyrproject\external\zephyr\boards\qemu\x86\Kconfig.defconfig
+C:\Users\admin\zephyrproject\external\zephyr\boards\qemu\x86\Kconfig.qemu_x86
 C:\Users\admin\zephyrproject\external\zephyr\boards\shields\abrobot_esp32c3_oled\Kconfig.shield
 C:\Users\admin\zephyrproject\external\zephyr\boards\shields\adafruit_2_8_tft_touch_v2\Kconfig.defconfig
 C:\Users\admin\zephyrproject\external\zephyr\boards\shields\adafruit_2_8_tft_touch_v2\Kconfig.shield

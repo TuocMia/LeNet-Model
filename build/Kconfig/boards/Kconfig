@@ -1,2 +1,2 @@
 # Load Zephyr board Kconfig descriptions.
-osource "C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit/Kconfig"
+osource "C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86/Kconfig"

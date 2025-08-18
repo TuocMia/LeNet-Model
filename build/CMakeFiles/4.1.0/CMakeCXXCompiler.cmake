@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-g++.exe")
+set(CMAKE_CXX_COMPILER "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "12.2.0")
@@ -25,11 +25,11 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "")
 
 
 
-set(CMAKE_AR "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-ar.exe")
-set(CMAKE_CXX_COMPILER_AR "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ar.exe")
-set(CMAKE_RANLIB "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ranlib.exe")
-set(CMAKE_LINKER "c:/users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/bin/ld.bfd.exe")
+set(CMAKE_AR "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-ar.exe")
+set(CMAKE_CXX_COMPILER_AR "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ar.exe")
+set(CMAKE_RANLIB "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ranlib.exe")
+set(CMAKE_LINKER "c:/users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/x86_64-zephyr-elf/bin/ld.bfd.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "")

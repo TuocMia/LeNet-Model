@@ -24,10 +24,10 @@ APPLICATION_CONFIG_DIR:PATH=C:/Users/admin/zephyrproject/apps/test_model
 APPLICATION_SOURCE_DIR:PATH=C:/Users/admin/zephyrproject/apps/test_model
 
 //Selected board
-BOARD:STRING=esp_wrover_kit/esp32/procpu
+BOARD:STRING=qemu_x86
 
-//Main board directory for board (esp_wrover_kit)
-BOARD_DIR:PATH=C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit
+//Main board directory for board (qemu_x86)
+BOARD_DIR:PATH=C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86
 
 //Support board extensions
 BOARD_EXTENSIONS:BOOL=ON
@@ -35,14 +35,11 @@ BOARD_EXTENSIONS:BOOL=ON
 //Path to a program.
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
 
-//Kernel binary file
-BYPRODUCT_KERNEL_BIN_NAME:FILEPATH=C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/zephyr.bin
-
 //Kernel elf file
 BYPRODUCT_KERNEL_ELF_NAME:FILEPATH=C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/zephyr.elf
 
 //Selected board
-CACHED_BOARD:STRING=esp_wrover_kit/esp32/procpu
+CACHED_BOARD:STRING=qemu_x86
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -57,24 +54,24 @@ CCACHE_FOUND:FILEPATH=CCACHE_FOUND-NOTFOUND
 CCACHE_PROGRAM:FILEPATH=CCACHE_PROGRAM-NOTFOUND
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-addr2line.exe
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-ar.exe
+CMAKE_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-ar.exe
 
 //Path to a program.
-CMAKE_AS:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-as.exe
+CMAKE_AS:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-as.exe
 
 //ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc.exe
+CMAKE_ASM_COMPILER:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ar.exe
+CMAKE_ASM_COMPILER_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ranlib.exe
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ranlib.exe
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -96,15 +93,15 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_BUILD_TYPE:STRING=
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-g++.exe
+CMAKE_CXX_COMPILER:STRING=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ar.exe
+CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ranlib.exe
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -122,15 +119,15 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc.exe
+CMAKE_C_COMPILER:STRING=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ar.exe
+CMAKE_C_COMPILER_AR:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc-ranlib.exe
+CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -179,10 +176,10 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/admin/zephyrproject/apps/test_m
 CMAKE_GCOV:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov.exe
 
 //Path to a program.
-CMAKE_GDB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gdb.exe
+CMAKE_GDB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gdb.exe
 
 //Path to a program.
-CMAKE_GDB_NO_PY:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gdb.exe
+CMAKE_GDB_NO_PY:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-gdb.exe
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Zephyr-Kernel
@@ -211,13 +208,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-nm.exe
+CMAKE_NM:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-objdump.exe
+CMAKE_OBJDUMP:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -247,10 +244,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-ranlib.exe
+CMAKE_RANLIB:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-ranlib.exe
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-readelf.exe
+CMAKE_READELF:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -300,7 +297,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-strip.exe
+CMAKE_STRIP:FILEPATH=C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-strip.exe
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
@@ -343,7 +340,7 @@ GPERF:FILEPATH=GPERF-NOTFOUND
 IMGTOOL:FILEPATH=C:/Users/admin/zephyrproject/external/bootloader/mcuboot/scripts/imgtool.py
 
 //Path to a program.
-OPENOCD:FILEPATH=OPENOCD-NOTFOUND
+OPENOCD:FILEPATH=C:/Program Files/OpenOCD/bin/openocd.exe
 
 //Path to a program.
 PAHOLE:FILEPATH=PAHOLE-NOTFOUND
@@ -363,8 +360,11 @@ Picolibc_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 Picolibc_SOURCE_DIR:STATIC=C:/Users/admin/zephyrproject/external/modules/lib/picolibc
 
+//Path to a program.
+QEMU:FILEPATH=QEMU-NOTFOUND
+
 //Path to the SoC directory.
-SOC_FULL_DIR:PATH=C:/Users/admin/zephyrproject/external/zephyr/soc/espressif
+SOC_FULL_DIR:PATH=C:/Users/admin/zephyrproject/external/zephyr/soc/intel/atom
 
 //True if toolchain supports newlib
 TOOLCHAIN_HAS_NEWLIB:BOOL=ON
@@ -422,8 +422,8 @@ test_model_SOURCE_DIR:STATIC=C:/Users/admin/zephyrproject/apps/test_model
 # INTERNAL cache entries
 ########################
 
-//List of board directories for board (esp_wrover_kit)
-BOARD_DIRECTORIES:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit
+//List of board directories for board (qemu_x86)
+BOARD_DIRECTORIES:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/dts/bindings
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -541,7 +541,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=141
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=134
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -585,17 +585,17 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding GnuLd
-FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[c:/users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/bin/ld.bfd.exe][v2.38()]
+FIND_PACKAGE_MESSAGE_DETAILS_GnuLd:INTERNAL=[c:/users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/x86_64-zephyr-elf/bin/ld.bfd.exe][v2.38()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[c:/Users/admin/zephyrproject/.venv/Scripts/python.exe][found components: Interpreter ][v3.13.6(3.10)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[c:/Users/admin/zephyrproject/.venv/Scripts/python.exe][found components: Interpreter ][v3.13.7(3.10)]
 //Zephyr hardware model version
 HWM:INTERNAL=v2
 //Zephyr hardware model
 HWMv2:INTERNAL=True
 KERNEL_META_PATH:INTERNAL=C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/zephyr.meta
-//List of SoC directories for SoC (esp32)
-SOC_DIRECTORIES:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/soc/espressif
-SOC_LINKER_SCRIPT:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/soc/espressif/common/../esp32/default.ld
+//List of SoC directories for SoC (atom)
+SOC_DIRECTORIES:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/soc/intel/atom
+SOC_LINKER_SCRIPT:INTERNAL=C:/Users/admin/zephyrproject/external/zephyr/soc/intel/atom/linker.ld
 //West
 WEST:INTERNAL=c:/Users/admin/zephyrproject/.venv/Scripts/python.exe;-m;west
 //Cached environment variable ZEPHYR_SDK_INSTALL_DIR
@@ -608,7 +608,7 @@ _Python3_EXECUTABLE:INTERNAL=c:/Users/admin/zephyrproject/.venv/Scripts/python.e
 //Path to a program.
 _Python3_EXECUTABLE_DEBUG:INTERNAL=_Python3_EXECUTABLE_DEBUG-NOTFOUND
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;6;64;<none>;cp313-win_amd64.pyd;;C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.1776.0_x64__qbz5n2kfra8p0\Lib;c:\Users\admin\zephyrproject\.venv\Lib;c:\Users\admin\zephyrproject\.venv\Lib\site-packages;c:\Users\admin\zephyrproject\.venv\Lib\site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;7;64;<none>;cp313-win_amd64.pyd;;C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib;c:\Users\admin\zephyrproject\.venv\Lib;c:\Users\admin\zephyrproject\.venv\Lib\site-packages;c:\Users\admin\zephyrproject\.venv\Lib\site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=90c199a3482a75a1ab35d67bdef1fd47
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=

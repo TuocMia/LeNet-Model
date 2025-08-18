@@ -3,6 +3,6 @@
 
 #include <tensorflow/lite/c/common.h>
 
-void HandleOutput(const TfLiteTensor* output);
+void HandleOutput(const int8_t* output_data, int length);
 
 #endif  // OUTPUT_HANDLER_HPP

@@ -1,23 +1,17 @@
-/*
- * Copyright 2020 The TensorFlow Authors. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+#ifndef CONSTANTS_H_
+#define CONSTANTS_H_
 
-#ifndef TENSORFLOW_LITE_MICRO_EXAMPLES_HELLO_WORLD_CONSTANTS_H_
-#define TENSORFLOW_LITE_MICRO_EXAMPLES_HELLO_WORLD_CONSTANTS_H_
+// Tensor arena
+const int kTensorArenaSize = 32000;
 
+// Input MNIST: 28x28, int8 quant
+const int kImageSize = 28 * 28;
+const float kInputScale = 0.0039215689f;   // ~1/255
+const int kInputZeroPoint = -128;
 
-extern const int kTensorArenaSize;  // Kích thước vùng nhớ cho Tensor Arena
+// Output: 10 lớp (digit 0-9)
+const int kNumClasses = 10;
+const float kOutputScale = 0.00390625f;
+const int kOutputZeroPoint = -128;
 
-#endif /* TENSORFLOW_LITE_MICRO_EXAMPLES_HELLO_WORLD_CONSTANTS_H_ */
+#endif  // CONSTANTS_H_

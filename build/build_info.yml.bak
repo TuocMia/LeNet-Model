@@ -1,4 +1,4 @@
 west:
-  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b esp_wrover_kit/esp32/procpu
+  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b qemu_x86
   topdir: C:\Users\admin\zephyrproject
   version: 1.4.0

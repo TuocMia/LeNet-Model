@@ -2,22 +2,22 @@
 #include "output_handler.hpp"
 #include <tensorflow/lite/micro/micro_log.h>
 #include <cmath>
+#include "constants.h"
 
 // In probabilities & Top-1 từ tensor output (int8, shape [1,10])
-void HandleOutput(const TfLiteTensor* output) {
-  const int n = output->dims->data[output->dims->size - 1];
+void HandleOutput(const int8_t* output_data, int length) {
+    int predicted = -1;
+    float max_val = -1e9;
 
-  int top_idx = -1;
-  int8_t top_q = INT8_MIN;
+    for (int i = 0; i < length; i++) {
+        float val = kOutputScale * (output_data[i] - kOutputZeroPoint);
+        MicroPrintf("Class %d = %f", i, static_cast<double>(val));
 
-  // In logits (đã dequantize) và tìm Top-1
-  for (int i = 0; i < n; ++i) {
-    const int8_t q = output->data.int8[i];
-    float y = (q - output->params.zero_point) * output->params.scale; // dequant
-    if (q > top_q) { top_q = q; top_idx = i; }
+        if (val > max_val) {
+            max_val = val;
+            predicted = i;
+        }
+    }
 
-    MicroPrintf("logit[%d] = %f", i, static_cast<double>(y));
-  }
-
-  MicroPrintf("===> Top-1 class: %d", top_idx);
+    MicroPrintf("Predicted digit = %d", predicted);
 }

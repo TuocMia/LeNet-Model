@@ -3,16 +3,16 @@ cmake:
     configuration-dir: C:/Users/admin/zephyrproject/apps/test_model
     source-dir: C:/Users/admin/zephyrproject/apps/test_model
   board:
-    name: esp_wrover_kit
+    name: qemu_x86
     path:
-     - C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit
-    qualifiers: esp32/procpu
+     - C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86
+    qualifiers: atom
     revision: 
   devicetree:
     bindings-dirs:
      - C:/Users/admin/zephyrproject/external/zephyr/dts/bindings
     files:
-     - C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit/esp_wrover_kit_procpu.dts
+     - C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86/qemu_x86.dts
     include-dirs:
      - C:/Users/admin/zephyrproject/external/modules/hal/atmel/include
      - C:/Users/admin/zephyrproject/external/modules/hal/gigadevice/include
@@ -36,7 +36,7 @@ cmake:
      - C:/Users/admin/zephyrproject/external/zephyr/dts
   kconfig:
     files:
-     - C:/Users/admin/zephyrproject/external/zephyr/boards/espressif/esp_wrover_kit/esp_wrover_kit_procpu_defconfig
+     - C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86/qemu_x86_defconfig
      - C:/Users/admin/zephyrproject/apps/test_model/prj.conf
     user-files:
      - C:/Users/admin/zephyrproject/apps/test_model/prj.conf
@@ -48,6 +48,6 @@ cmake:
     zephyr-base: C:/Users/admin/zephyrproject/external/zephyr
 version: 0.1.0
 west:
-  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b esp_wrover_kit/esp32/procpu
+  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b qemu_x86
   topdir: C:\Users\admin\zephyrproject
   version: 1.4.0
