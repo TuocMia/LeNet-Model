@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/home/tuocmia/zephyrproject/zephyr/boards/espressif/esp_wrover_kit/Kconfig.esp_wrover_kit"

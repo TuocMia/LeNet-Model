@@ -1,1 +1,1 @@
-"mcuboot":"C:/Users/admin/zephyrproject/external/bootloader/mcuboot":"C:/Users/admin/zephyrproject/external/bootloader/mcuboot/boot/zephyr/sysbuild"
+"mcuboot":"/home/tuocmia/zephyrproject/bootloader/mcuboot":"/home/tuocmia/zephyrproject/bootloader/mcuboot/boot/zephyr/sysbuild"

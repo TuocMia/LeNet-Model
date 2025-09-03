@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/admin/zephyrproject/external/zephyr
+# Install script for directory: /home/tuocmia/zephyrproject/zephyr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Zephyr-Kernel")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,334 +32,333 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0/x86_64-zephyr-elf/bin/x86_64-zephyr-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "/home/tuocmia/zephyr-sdk-0.17.0/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/arch/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/arch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/lib/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/soc/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/boards/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/boards/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/subsys/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/subsys/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/drivers/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/drivers/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/tflite-micro/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/tflite-micro/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/acpica/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/acpica/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/cmsis/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/cmsis/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/cmsis-dsp/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/cmsis-dsp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/cmsis-nn/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/cmsis-nn/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/fatfs/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/fatfs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/adi/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/adi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/altera/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/altera/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_ambiq/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_ambiq/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/atmel/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/atmel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_espressif/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_bouffalolab/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_ethos_u/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_espressif/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_gigadevice/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_ethos_u/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_infineon/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_gigadevice/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_intel/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_infineon/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/microchip/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_intel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_nordic/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/microchip/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/nuvoton/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_nordic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_nxp/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/nuvoton/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/openisa/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_nxp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/quicklogic/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/openisa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_renesas/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/quicklogic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_rpi_pico/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_renesas/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_silabs/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_rpi_pico/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_st/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_silabs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_stm32/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_st/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_tdk/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_stm32/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_telink/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_tdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/ti/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_telink/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_wch/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/ti/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hal_wurthelektronik/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_wch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/xtensa/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hal_wurthelektronik/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/hostap/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/xtensa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/liblc3/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/hostap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/libmctp/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/liblc3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/libmetal/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/libmctp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/littlefs/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/libmetal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/loramac-node/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/littlefs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/lvgl/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/loramac-node/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/mbedtls/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/lvgl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/mcuboot/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/mbedtls/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/mipi-sys-t/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/mcuboot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/nrf_wifi/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/mipi-sys-t/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/open-amp/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/nrf_wifi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/openthread/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/open-amp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/percepio/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/openthread/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/picolibc/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/percepio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/segger/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/picolibc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/tinycrypt/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/segger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/trusted-firmware-a/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/tinycrypt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/trusted-firmware-m/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/trusted-firmware-a/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/uoscore-uedhoc/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/trusted-firmware-m/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/zcbor/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/uoscore-uedhoc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/modules/nrf_hw_models/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/zcbor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/kernel/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/modules/nrf_hw_models/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/cmake/flash/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/kernel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/cmake/usage/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/cmake/flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/cmake/reports/cmake_install.cmake")
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/cmake/usage/cmake_install.cmake")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/admin/zephyrproject/apps/test_model/build/zephyr/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/tuocmia/zephyrproject/tflite/LeNet-Model/build/zephyr/cmake/reports/cmake_install.cmake")
 endif()
+

@@ -1,34 +1,34 @@
-menu "tflite-micro (C:/Users/admin/zephyrproject/external/optional/modules/lib/tflite-micro)"
+menu "tflite-micro (/home/tuocmia/zephyrproject/optional/modules/lib/tflite-micro)"
 osource "$(ZEPHYR_TFLITE_MICRO_KCONFIG)"
 config ZEPHYR_TFLITE_MICRO_MODULE
 	bool
 	default y
 endmenu
-menu "acpica (C:/Users/admin/zephyrproject/external/modules/lib/acpica)"
+menu "acpica (/home/tuocmia/zephyrproject/modules/lib/acpica)"
 osource "$(ZEPHYR_ACPICA_KCONFIG)"
 config ZEPHYR_ACPICA_MODULE
 	bool
 	default y
 endmenu
-menu "cmsis (C:/Users/admin/zephyrproject/external/modules/hal/cmsis)"
+menu "cmsis (/home/tuocmia/zephyrproject/modules/hal/cmsis)"
 osource "$(ZEPHYR_CMSIS_KCONFIG)"
 config ZEPHYR_CMSIS_MODULE
 	bool
 	default y
 endmenu
-menu "cmsis-dsp (C:/Users/admin/zephyrproject/external/modules/lib/cmsis-dsp)"
+menu "cmsis-dsp (/home/tuocmia/zephyrproject/modules/lib/cmsis-dsp)"
 osource "$(ZEPHYR_CMSIS_DSP_KCONFIG)"
 config ZEPHYR_CMSIS_DSP_MODULE
 	bool
 	default y
 endmenu
-menu "cmsis-nn (C:/Users/admin/zephyrproject/external/modules/lib/cmsis-nn)"
+menu "cmsis-nn (/home/tuocmia/zephyrproject/modules/lib/cmsis-nn)"
 osource "$(ZEPHYR_CMSIS_NN_KCONFIG)"
 config ZEPHYR_CMSIS_NN_MODULE
 	bool
 	default y
 endmenu
-menu "fatfs (C:/Users/admin/zephyrproject/external/modules/fs/fatfs)"
+menu "fatfs (/home/tuocmia/zephyrproject/modules/fs/fatfs)"
 osource "$(ZEPHYR_FATFS_KCONFIG)"
 config ZEPHYR_FATFS_MODULE
 	bool
@@ -40,7 +40,7 @@ config ZEPHYR_ADI_MODULE
 config ZEPHYR_ALTERA_MODULE
 	bool
 	default y
-menu "hal_ambiq (C:/Users/admin/zephyrproject/external/modules/hal/ambiq)"
+menu "hal_ambiq (/home/tuocmia/zephyrproject/modules/hal/ambiq)"
 osource "$(ZEPHYR_HAL_AMBIQ_KCONFIG)"
 config ZEPHYR_HAL_AMBIQ_MODULE
 	bool
@@ -49,8 +49,14 @@ endmenu
 config ZEPHYR_ATMEL_MODULE
 	bool
 	default y
-menu "hal_espressif (C:/Users/admin/zephyrproject/external/modules/hal/espressif)"
-osource "C:/Users/admin/zephyrproject/external/modules/hal/espressif/zephyr/Kconfig"
+menu "hal_bouffalolab (/home/tuocmia/zephyrproject/modules/hal/bouffalolab)"
+osource "$(ZEPHYR_HAL_BOUFFALOLAB_KCONFIG)"
+config ZEPHYR_HAL_BOUFFALOLAB_MODULE
+	bool
+	default y
+endmenu
+menu "hal_espressif (/home/tuocmia/zephyrproject/modules/hal/espressif)"
+osource "/home/tuocmia/zephyrproject/modules/hal/espressif/zephyr/Kconfig"
 config ZEPHYR_HAL_ESPRESSIF_MODULE
 	bool
 	default y
@@ -58,19 +64,19 @@ config ZEPHYR_HAL_ESPRESSIF_MODULE
 config ZEPHYR_HAL_ESPRESSIF_MODULE_BLOBS
 	bool
 endmenu
-menu "hal_ethos_u (C:/Users/admin/zephyrproject/external/modules/hal/ethos_u)"
+menu "hal_ethos_u (/home/tuocmia/zephyrproject/modules/hal/ethos_u)"
 osource "$(ZEPHYR_HAL_ETHOS_U_KCONFIG)"
 config ZEPHYR_HAL_ETHOS_U_MODULE
 	bool
 	default y
 endmenu
-menu "hal_gigadevice (C:/Users/admin/zephyrproject/external/modules/hal/gigadevice)"
+menu "hal_gigadevice (/home/tuocmia/zephyrproject/modules/hal/gigadevice)"
 osource "$(ZEPHYR_HAL_GIGADEVICE_KCONFIG)"
 config ZEPHYR_HAL_GIGADEVICE_MODULE
 	bool
 	default y
 endmenu
-menu "hal_infineon (C:/Users/admin/zephyrproject/external/modules/hal/infineon)"
+menu "hal_infineon (/home/tuocmia/zephyrproject/modules/hal/infineon)"
 osource "$(ZEPHYR_HAL_INFINEON_KCONFIG)"
 config ZEPHYR_HAL_INFINEON_MODULE
 	bool
@@ -79,8 +85,8 @@ config ZEPHYR_HAL_INFINEON_MODULE
 config ZEPHYR_HAL_INFINEON_MODULE_BLOBS
 	bool
 endmenu
-menu "hal_intel (C:/Users/admin/zephyrproject/external/modules/hal/intel)"
-osource "C:/Users/admin/zephyrproject/external/modules/hal/intel/zephyr/Kconfig"
+menu "hal_intel (/home/tuocmia/zephyrproject/modules/hal/intel)"
+osource "/home/tuocmia/zephyrproject/modules/hal/intel/zephyr/Kconfig"
 config ZEPHYR_HAL_INTEL_MODULE
 	bool
 	default y
@@ -88,7 +94,7 @@ endmenu
 config ZEPHYR_MICROCHIP_MODULE
 	bool
 	default y
-menu "hal_nordic (C:/Users/admin/zephyrproject/external/modules/hal/nordic)"
+menu "hal_nordic (/home/tuocmia/zephyrproject/modules/hal/nordic)"
 osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
 config ZEPHYR_HAL_NORDIC_MODULE
 	bool
@@ -100,7 +106,7 @@ endmenu
 config ZEPHYR_NUVOTON_MODULE
 	bool
 	default y
-menu "hal_nxp (C:/Users/admin/zephyrproject/external/modules/hal/nxp)"
+menu "hal_nxp (/home/tuocmia/zephyrproject/modules/hal/nxp)"
 osource "$(ZEPHYR_HAL_NXP_KCONFIG)"
 config ZEPHYR_HAL_NXP_MODULE
 	bool
@@ -121,13 +127,13 @@ config ZEPHYR_HAL_RENESAS_MODULE
 
 config ZEPHYR_HAL_RENESAS_MODULE_BLOBS
 	bool
-menu "hal_rpi_pico (C:/Users/admin/zephyrproject/external/modules/hal/rpi_pico)"
+menu "hal_rpi_pico (/home/tuocmia/zephyrproject/modules/hal/rpi_pico)"
 osource "$(ZEPHYR_HAL_RPI_PICO_KCONFIG)"
 config ZEPHYR_HAL_RPI_PICO_MODULE
 	bool
 	default y
 endmenu
-menu "hal_silabs (C:/Users/admin/zephyrproject/external/modules/hal/silabs)"
+menu "hal_silabs (/home/tuocmia/zephyrproject/modules/hal/silabs)"
 osource "$(ZEPHYR_HAL_SILABS_KCONFIG)"
 config ZEPHYR_HAL_SILABS_MODULE
 	bool
@@ -136,7 +142,7 @@ config ZEPHYR_HAL_SILABS_MODULE
 config ZEPHYR_HAL_SILABS_MODULE_BLOBS
 	bool
 endmenu
-menu "hal_st (C:/Users/admin/zephyrproject/external/modules/hal/st)"
+menu "hal_st (/home/tuocmia/zephyrproject/modules/hal/st)"
 osource "$(ZEPHYR_HAL_ST_KCONFIG)"
 config ZEPHYR_HAL_ST_MODULE
 	bool
@@ -148,14 +154,14 @@ config ZEPHYR_HAL_STM32_MODULE
 
 config ZEPHYR_HAL_STM32_MODULE_BLOBS
 	bool
-menu "hal_tdk (C:/Users/admin/zephyrproject/external/modules/hal/tdk)"
+menu "hal_tdk (/home/tuocmia/zephyrproject/modules/hal/tdk)"
 osource "$(ZEPHYR_HAL_TDK_KCONFIG)"
 config ZEPHYR_HAL_TDK_MODULE
 	bool
 	default y
 endmenu
-menu "hal_telink (C:/Users/admin/zephyrproject/external/modules/hal/telink)"
-osource "C:/Users/admin/zephyrproject/external/modules/hal/telink/Kconfig"
+menu "hal_telink (/home/tuocmia/zephyrproject/modules/hal/telink)"
+osource "/home/tuocmia/zephyrproject/modules/hal/telink/Kconfig"
 config ZEPHYR_HAL_TELINK_MODULE
 	bool
 	default y
@@ -163,7 +169,7 @@ endmenu
 config ZEPHYR_TI_MODULE
 	bool
 	default y
-menu "hal_wch (C:/Users/admin/zephyrproject/external/modules/hal/wch)"
+menu "hal_wch (/home/tuocmia/zephyrproject/modules/hal/wch)"
 osource "$(ZEPHYR_HAL_WCH_KCONFIG)"
 config ZEPHYR_HAL_WCH_MODULE
 	bool
@@ -175,13 +181,13 @@ config ZEPHYR_HAL_WURTHELEKTRONIK_MODULE
 config ZEPHYR_XTENSA_MODULE
 	bool
 	default y
-menu "hostap (C:/Users/admin/zephyrproject/external/modules/lib/hostap)"
+menu "hostap (/home/tuocmia/zephyrproject/modules/lib/hostap)"
 osource "$(ZEPHYR_HOSTAP_KCONFIG)"
 config ZEPHYR_HOSTAP_MODULE
 	bool
 	default y
 endmenu
-menu "liblc3 (C:/Users/admin/zephyrproject/external/modules/lib/liblc3)"
+menu "liblc3 (/home/tuocmia/zephyrproject/modules/lib/liblc3)"
 osource "$(ZEPHYR_LIBLC3_KCONFIG)"
 config ZEPHYR_LIBLC3_MODULE
 	bool
@@ -193,25 +199,25 @@ config ZEPHYR_LIBMCTP_MODULE
 config ZEPHYR_LIBMETAL_MODULE
 	bool
 	default y
-menu "littlefs (C:/Users/admin/zephyrproject/external/modules/fs/littlefs)"
+menu "littlefs (/home/tuocmia/zephyrproject/modules/fs/littlefs)"
 osource "$(ZEPHYR_LITTLEFS_KCONFIG)"
 config ZEPHYR_LITTLEFS_MODULE
 	bool
 	default y
 endmenu
-menu "loramac-node (C:/Users/admin/zephyrproject/external/modules/lib/loramac-node)"
+menu "loramac-node (/home/tuocmia/zephyrproject/modules/lib/loramac-node)"
 osource "$(ZEPHYR_LORAMAC_NODE_KCONFIG)"
 config ZEPHYR_LORAMAC_NODE_MODULE
 	bool
 	default y
 endmenu
-menu "lvgl (C:/Users/admin/zephyrproject/external/modules/lib/gui/lvgl)"
-osource "C:/Users/admin/zephyrproject/external/modules/lib/gui/lvgl/zephyr/Kconfig"
+menu "lvgl (/home/tuocmia/zephyrproject/modules/lib/gui/lvgl)"
+osource "/home/tuocmia/zephyrproject/modules/lib/gui/lvgl/zephyr/Kconfig"
 config ZEPHYR_LVGL_MODULE
 	bool
 	default y
 endmenu
-menu "mbedtls (C:/Users/admin/zephyrproject/external/modules/crypto/mbedtls)"
+menu "mbedtls (/home/tuocmia/zephyrproject/modules/crypto/mbedtls)"
 osource "$(ZEPHYR_MBEDTLS_KCONFIG)"
 config ZEPHYR_MBEDTLS_MODULE
 	bool
@@ -223,7 +229,7 @@ config ZEPHYR_MCUBOOT_MODULE
 config ZEPHYR_MIPI_SYS_T_MODULE
 	bool
 	default y
-menu "nrf_wifi (C:/Users/admin/zephyrproject/external/modules/lib/nrf_wifi)"
+menu "nrf_wifi (/home/tuocmia/zephyrproject/modules/lib/nrf_wifi)"
 osource "$(ZEPHYR_NRF_WIFI_KCONFIG)"
 config ZEPHYR_NRF_WIFI_MODULE
 	bool
@@ -235,25 +241,25 @@ endmenu
 config ZEPHYR_OPEN_AMP_MODULE
 	bool
 	default y
-menu "openthread (C:/Users/admin/zephyrproject/external/modules/lib/openthread)"
+menu "openthread (/home/tuocmia/zephyrproject/modules/lib/openthread)"
 osource "$(ZEPHYR_OPENTHREAD_KCONFIG)"
 config ZEPHYR_OPENTHREAD_MODULE
 	bool
 	default y
 endmenu
-menu "percepio (C:/Users/admin/zephyrproject/external/modules/debug/percepio)"
-osource "C:/Users/admin/zephyrproject/external/modules/debug/percepio/zephyr/Kconfig"
+menu "percepio (/home/tuocmia/zephyrproject/modules/debug/percepio)"
+osource "/home/tuocmia/zephyrproject/modules/debug/percepio/zephyr/Kconfig"
 config ZEPHYR_PERCEPIO_MODULE
 	bool
 	default y
 endmenu
-menu "picolibc (C:/Users/admin/zephyrproject/external/modules/lib/picolibc)"
-osource "C:/Users/admin/zephyrproject/external/modules/lib/picolibc/zephyr/Kconfig"
+menu "picolibc (/home/tuocmia/zephyrproject/modules/lib/picolibc)"
+osource "/home/tuocmia/zephyrproject/modules/lib/picolibc/zephyr/Kconfig"
 config ZEPHYR_PICOLIBC_MODULE
 	bool
 	default y
 endmenu
-menu "segger (C:/Users/admin/zephyrproject/external/modules/debug/segger)"
+menu "segger (/home/tuocmia/zephyrproject/modules/debug/segger)"
 osource "$(ZEPHYR_SEGGER_KCONFIG)"
 config ZEPHYR_SEGGER_MODULE
 	bool
@@ -262,25 +268,25 @@ endmenu
 config ZEPHYR_TINYCRYPT_MODULE
 	bool
 	default y
-menu "trusted-firmware-a (C:/Users/admin/zephyrproject/external/modules/tee/tf-a/trusted-firmware-a)"
+menu "trusted-firmware-a (/home/tuocmia/zephyrproject/modules/tee/tf-a/trusted-firmware-a)"
 osource "$(ZEPHYR_TRUSTED_FIRMWARE_A_KCONFIG)"
 config ZEPHYR_TRUSTED_FIRMWARE_A_MODULE
 	bool
 	default y
 endmenu
-menu "trusted-firmware-m (C:/Users/admin/zephyrproject/external/modules/tee/tf-m/trusted-firmware-m)"
+menu "trusted-firmware-m (/home/tuocmia/zephyrproject/modules/tee/tf-m/trusted-firmware-m)"
 osource "$(ZEPHYR_TRUSTED_FIRMWARE_M_KCONFIG)"
 config ZEPHYR_TRUSTED_FIRMWARE_M_MODULE
 	bool
 	default y
 endmenu
-menu "uoscore-uedhoc (C:/Users/admin/zephyrproject/external/modules/lib/uoscore-uedhoc)"
+menu "uoscore-uedhoc (/home/tuocmia/zephyrproject/modules/lib/uoscore-uedhoc)"
 osource "$(ZEPHYR_UOSCORE_UEDHOC_KCONFIG)"
 config ZEPHYR_UOSCORE_UEDHOC_MODULE
 	bool
 	default y
 endmenu
-menu "zcbor (C:/Users/admin/zephyrproject/external/modules/lib/zcbor)"
+menu "zcbor (/home/tuocmia/zephyrproject/modules/lib/zcbor)"
 osource "$(ZEPHYR_ZCBOR_KCONFIG)"
 config ZEPHYR_ZCBOR_MODULE
 	bool

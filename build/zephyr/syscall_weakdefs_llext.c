@@ -14,10 +14,21 @@ static void * const no_syscall_impl Z_GENERIC_SECTION(llext_no_syscall_impl);
  * linker outside this file will be exported as NULL and simply fail when
  * an extension requiring them is loaded.
  */
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_device_deinit;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_device_get_binding;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_device_get_by_dt_nodelabel;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_device_init;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_device_is_ready;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_get_pending_int;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_pin_configure;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_pin_get_config;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_pin_interrupt_configure;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_clear_bits_raw;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_get_direction;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_get_raw;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_set_bits_raw;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_set_masked_raw;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_gpio_port_toggle_bits;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_busy_wait;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_condvar_broadcast;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_k_condvar_init;
@@ -123,8 +134,6 @@ extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_log_frontend_filter_
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_log_panic;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_log_process;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_sys_clock_hw_cycles_per_sec_runtime_get;
-extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_sys_csrand_get;
-extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_sys_rand_get;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_config_get;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_configure;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_drv_cmd;
@@ -149,6 +158,8 @@ extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_rx_enable_u16;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_tx;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_tx_abort;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_uart_tx_u16;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_xtensa_user_fault;
+extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_z_errno;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_z_log_msg_simple_create_0;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_z_log_msg_simple_create_1;
 extern __weak ALIAS_OF(no_syscall_impl) void * const z_impl_z_log_msg_simple_create_2;

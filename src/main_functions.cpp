@@ -2,12 +2,13 @@
 #include "constants.h"
 #include "output_handler.hpp"
 #include "model-LeNet.h"
-#include "test_image.h"
 
 #include <tensorflow/lite/micro/micro_mutable_op_resolver.h>
 #include <tensorflow/lite/micro/micro_interpreter.h>
 #include <tensorflow/lite/micro/micro_log.h>
 #include <tensorflow/lite/schema/schema_generated.h>
+
+#include <zephyr/kernel.h>   // để dùng k_cycle_get_32 và k_sleep
 
 namespace {
   const tflite::Model* model = nullptr;
@@ -56,20 +57,18 @@ void setup(void) {
 
 
 void loop(void) {
-  extern const uint8_t test_image[28*28];  
 
-  // Chuẩn bị input: float → int8
-  for (int i = 0; i < kImageSize; i++) {
-    float x = test_image[i] / 255.0f;
-    int8_t q = static_cast<int8_t>(x / kInputScale + kInputZeroPoint);
-    input->data.int8[i] = q;
-  }
+  uint32_t start = k_cycle_get_32();
+  TfLiteStatus invoke_status = interpreter->Invoke();
+	if (invoke_status != kTfLiteOk) {
+		MicroPrintf("Invoke failed");
+		return;
+	}
 
-  if (interpreter->Invoke() != kTfLiteOk) {
-    MicroPrintf("Invoke failed!");
-    return;
-  }
+  uint32_t end = k_cycle_get_32();
 
-  // Gọi output handler
-  HandleOutput(output->data.int8, kNumClasses);
+  uint64_t duration_ns = k_cyc_to_ns_floor64(end - start);
+
+  MicroPrintf("Inference time = %llu us", duration_ns / 1000);
+
 }

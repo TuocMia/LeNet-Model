@@ -1,53 +1,58 @@
 cmake:
   application:
-    configuration-dir: C:/Users/admin/zephyrproject/apps/test_model
-    source-dir: C:/Users/admin/zephyrproject/apps/test_model
+    configuration-dir: '/home/tuocmia/zephyrproject/tflite/LeNet-Model'
+    source-dir: '/home/tuocmia/zephyrproject/tflite/LeNet-Model'
   board:
-    name: qemu_x86
+    name: 'esp_wrover_kit'
     path:
-     - C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86
-    qualifiers: atom
-    revision: 
+     - '/home/tuocmia/zephyrproject/zephyr/boards/espressif/esp_wrover_kit'
+    qualifiers: 'esp32/procpu'
+    revision: ''
   devicetree:
     bindings-dirs:
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/bindings
+     - '/home/tuocmia/zephyrproject/zephyr/dts/bindings'
     files:
-     - C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86/qemu_x86.dts
+     - '/home/tuocmia/zephyrproject/zephyr/boards/espressif/esp_wrover_kit/esp_wrover_kit_procpu.dts'
     include-dirs:
-     - C:/Users/admin/zephyrproject/external/modules/hal/atmel/include
-     - C:/Users/admin/zephyrproject/external/modules/hal/gigadevice/include
-     - C:/Users/admin/zephyrproject/external/modules/hal/microchip/include
-     - C:/Users/admin/zephyrproject/external/modules/hal/microchip/dts
-     - C:/Users/admin/zephyrproject/external/modules/hal/nuvoton/dts
-     - C:/Users/admin/zephyrproject/external/modules/hal/nxp/dts
-     - C:/Users/admin/zephyrproject/external/modules/hal/stm32/dts
-     - C:/Users/admin/zephyrproject/external/zephyr/include
-     - C:/Users/admin/zephyrproject/external/zephyr/include/zephyr
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/common
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/x86
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/xtensa
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/sparc
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/riscv
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/posix
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/nios2
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/arm64
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/arm
-     - C:/Users/admin/zephyrproject/external/zephyr/dts/arc
-     - C:/Users/admin/zephyrproject/external/zephyr/dts
+     - '/home/tuocmia/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/tuocmia/zephyrproject/modules/hal/atmel/include'
+     - '/home/tuocmia/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/tuocmia/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/tuocmia/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/tuocmia/zephyrproject/modules/hal/microchip/include'
+     - '/home/tuocmia/zephyrproject/modules/hal/microchip/dts'
+     - '/home/tuocmia/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/tuocmia/zephyrproject/modules/hal/nxp/dts'
+     - '/home/tuocmia/zephyrproject/modules/hal/stm32/dts'
+     - '/home/tuocmia/zephyrproject/zephyr/include'
+     - '/home/tuocmia/zephyrproject/zephyr/include/zephyr'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/common'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/vendor'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/rx'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/x86'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/xtensa'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/sparc'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/riscv'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/posix'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/nios2'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/arm64'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/arm'
+     - '/home/tuocmia/zephyrproject/zephyr/dts/arc'
+     - '/home/tuocmia/zephyrproject/zephyr/dts'
   kconfig:
     files:
-     - C:/Users/admin/zephyrproject/external/zephyr/boards/qemu/x86/qemu_x86_defconfig
-     - C:/Users/admin/zephyrproject/apps/test_model/prj.conf
+     - '/home/tuocmia/zephyrproject/zephyr/boards/espressif/esp_wrover_kit/esp_wrover_kit_procpu_defconfig'
+     - '/home/tuocmia/zephyrproject/tflite/LeNet-Model/prj.conf'
     user-files:
-     - C:/Users/admin/zephyrproject/apps/test_model/prj.conf
+     - '/home/tuocmia/zephyrproject/tflite/LeNet-Model/prj.conf'
   toolchain:
-    name: zephyr
-    path: C:/Users/admin/.zephyr_ide/toolchains/zephyr-sdk-0.17.0
+    name: 'zephyr'
+    path: '/home/tuocmia/zephyr-sdk-0.17.0'
   zephyr:
-    version: 4.1.0
-    zephyr-base: C:/Users/admin/zephyrproject/external/zephyr
-version: 0.1.0
+    version: '4.1.99'
+    zephyr-base: '/home/tuocmia/zephyrproject/zephyr'
+version: '0.1.0'
 west:
-  command: C:\Users\admin\zephyrproject\.venv\Scripts\west build -p -b qemu_x86
-  topdir: C:\Users\admin\zephyrproject
-  version: 1.4.0
+  command: '/home/tuocmia/zephyrproject/.venv/bin/west build -p -b esp_wrover_kit/esp32/procpu'
+  topdir: '/home/tuocmia/zephyrproject'
+  version: '1.3.0'
